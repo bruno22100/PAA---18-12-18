@@ -42,7 +42,8 @@ return 0;
 
 int busca_bee(int *a ,int inicio, int final, int x)
 {
-	if(inicio>final) return -1;
+	//printf("%d %d\n",inicio,final);
+	if(inicio>=final) return -1;
 	int mid = (inicio+final)/2;
 	if(x == a[mid])
 	{
